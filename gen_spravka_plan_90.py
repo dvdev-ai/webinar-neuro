@@ -15,11 +15,11 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor, Twips
 
+HERE = Path(__file__).resolve().parent
 OUT_PATHS = [
-    Path("/Users/danilavertiy/Downloads/Справка_поминутный_план_вебинара_90_мин_v1.0.docx"),
-    Path("/Users/danilavertiy/Downloads/Вебинар_нейросети/Справка_поминутный_план_вебинара_90_мин_v1.0.docx"),
+    HERE / "Справка_поминутный_план_вебинара_90_мин_v1.0.docx",
 ]
-GEN_COPY = Path("/Users/danilavertiy/Downloads/Вебинар_нейросети/gen_spravka_plan_90.py")
+GEN_COPY = Path(__file__).resolve()
 
 FONT_NAME = "Times New Roman"
 BLACK = RGBColor(0x00, 0x00, 0x00)

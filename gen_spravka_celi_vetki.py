@@ -15,9 +15,9 @@ from docx.oxml import OxmlElement, parse_xml
 from docx.oxml.ns import qn
 from docx.shared import Cm, Pt, RGBColor
 
+HERE = Path(__file__).resolve().parent
 OUT_PATHS = [
-    Path("/Users/danilavertiy/Downloads/Справка_цели_ветки_вебинара_v1.0.docx"),
-    Path("/Users/danilavertiy/Downloads/Вебинар_нейросети/Справка_цели_ветки_вебинара_v1.0.docx"),
+    HERE / "Справка_цели_ветки_вебинара_v1.0.docx",
 ]
 
 FONT_NAME = "Times New Roman"
